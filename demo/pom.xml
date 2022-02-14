@@ -11,6 +11,7 @@
 
     <modules>
         <module>wechat</module>
+        <module>dozer</module>
     </modules>
 
     <properties>
