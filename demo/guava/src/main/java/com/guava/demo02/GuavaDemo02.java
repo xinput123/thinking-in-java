@@ -6,8 +6,8 @@ import com.github.rholder.retry.RetryerBuilder;
 import com.github.rholder.retry.StopStrategies;
 import com.github.rholder.retry.WaitStrategies;
 import com.google.common.base.Predicates;
-import com.guava.util.Logs;
 import org.slf4j.Logger;
+import org.xinput.thinking.common.util.Logs;
 
 import java.io.IOException;
 import java.util.concurrent.Callable;

@@ -1,8 +1,5 @@
 package com.guava.demo02;
 
-import org.slf4j.Logger;
-import org.xinput.thinking.common.util.Logs;
-
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
@@ -13,8 +10,6 @@ import java.util.concurrent.Callable;
  * @Date: 2020-02-18 14:00
  */
 public class ProductInformationHander implements Callable<Boolean> {
-
-  private static Logger logger = Logs.get();
 
   private ProductRepository pRepo;
 

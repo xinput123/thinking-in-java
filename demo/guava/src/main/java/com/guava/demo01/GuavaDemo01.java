@@ -1,14 +1,13 @@
 package com.guava.demo01;
 
-import com.github.rholder.retry.AttemptTimeLimiters;
 import com.github.rholder.retry.RetryException;
 import com.github.rholder.retry.Retryer;
 import com.github.rholder.retry.RetryerBuilder;
 import com.github.rholder.retry.StopStrategies;
 import com.github.rholder.retry.WaitStrategies;
 import com.google.common.base.Predicates;
-import com.guava.util.Logs;
 import org.slf4j.Logger;
+import org.xinput.thinking.common.util.Logs;
 
 import java.io.IOException;
 import java.time.LocalTime;
@@ -52,7 +51,7 @@ public class GuavaDemo01 {
         .withStopStrategy(StopStrategies.stopAfterAttempt(3))
 
         // 时间限制: 某次请求不得超过2s , 类似: TimeLimiter timeLimiter = new SimpleTimeLimiter();
-        .withAttemptTimeLimiter(AttemptTimeLimiters.fixedTimeLimit(2, TimeUnit.SECONDS))
+//        .withAttemptTimeLimiter(AttemptTimeLimiters.fixedTimeLimit(2, TimeUnit.SECONDS))
 
         // 监听器
         .withRetryListener(new GuavaDemo01Listener())
